@@ -22,6 +22,30 @@ console.log(massa);
 
 const cidade = "São José dos Pinhais";
 
-Console.log(cidade);
+console.log(cidade);
 
-// adicione nesse programa altura,massa e cidade onde mora 
+//agencia de viagens paris,monte everest,gran canion,polo norte,Santorini, Grécia,Na península de Yucatan, no México, Japão,New york
+const listaDeDestinos = new Array(
+  "Paris",
+  "Monte Everest",
+  "Gran Canion",
+  "Polo Norte",
+  "Santorini Grécia",
+  "Na península de Yucatan no México",
+  "Japão",
+  "New york"
+); 
+
+console.log(listaDeDestinos);
+console.log(listaDeDestinos[2]) 
+listaDeDestinos.push("coronel vivida")
+
+console.log(listaDeDestinos)
+listaDeDestinos.push("Tailandia")
+console.log(listaDeDestinos)
+
+listaDeDestinos.push("Canada")
+console.log(listaDeDestinos)
+
+listaDeDestinos.push("Ushuaia")
+console.log(listaDeDestinos)
