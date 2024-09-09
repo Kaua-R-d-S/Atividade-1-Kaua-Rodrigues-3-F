@@ -26,14 +26,14 @@ console.log(cidade);
 
 //agencia de viagens paris,monte everest,gran canion,polo norte,Santorini, Grécia,Na península de Yucatan, no México, Japão,New york
 const listaDeDestinos = new Array(
-  "Paris",
-  "Monte Everest",
-  "Gran Canion",
-  "Polo Norte",
-  "Santorini Grécia",
-  "Na península de Yucatan no México",
-  "Japão",
-  "New york"
+  " Paris",
+  " Monte Everest",
+  " Gran Canion",
+  " Polo Norte",
+  " Santorini Grécia",
+  " Na península de Yucatan no México",
+  " Japão",
+  " New york"
 ); 
 
 console.log(listaDeDestinos);
@@ -49,3 +49,13 @@ console.log(listaDeDestinos)
 
 listaDeDestinos.push("Ushuaia")
 console.log(listaDeDestinos)
+
+const IdadeComprador = 18;
+
+if (IdadeComprador >= 18) {
+
+  console.log ("Comprador maior de idade");
+ console.log("destinos disponíveis" + listaDeDestinos);
+} else {
+  console.log("Menor de idade tem desconto, e se trazer comida é de graça");
+}
