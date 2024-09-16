@@ -1,3 +1,6 @@
+const prompt = require ( 'prompt-sync');
+const entrada = prompt();
+
 const { Console } = require("console");
 
 console.log("Lucas stasiak é um dos mior professor de computador");    
@@ -37,25 +40,27 @@ const listaDeDestinos = new Array(
 ); 
 
 console.log(listaDeDestinos);
-console.log(listaDeDestinos[2]) 
-listaDeDestinos.push("coronel vivida")
+console.log(listaDeDestinos[3]);
+listaDeDestinos.push("Coronel vivida");
+console.log(listaDeDestinos);
 
-console.log(listaDeDestinos)
-listaDeDestinos.push("Tailandia")
-console.log(listaDeDestinos)
+listaDeDestinos.push("Curitiba");
+console.log(listaDeDestinos);
 
-listaDeDestinos.push("Canada")
-console.log(listaDeDestinos)
+listaDeDestinos.push("São josé dos pinhais");
+console.log(listaDeDestinos);
 
-listaDeDestinos.push("Ushuaia")
-console.log(listaDeDestinos)
+listaDeDestinos.push("Londrina");
+console.log(listaDeDestinos);
 
-const IdadeComprador = 18;
+var nomeComprador = entrada("Digite seu nome: ");
+var idadeComprador = entrada("Qual sua idade?");
 
-if (IdadeComprador >= 18) {
-
-  console.log ("Comprador maior de idade");
- console.log("destinos disponíveis" + listaDeDestinos);
-} else {
-  console.log("Menor de idade tem desconto, e se trazer comida é de graça");
+if(idadeComprador >=18) {
+  console.log("Ola senhor(a) " + nomeComprador);
+  console.log("comprador maior de idade");
+  console.log("destinos disponíveis: " + listaDeDestinos);
+}else {
+console.log("Não é possivel vender passagem para menores de idade");
+console.log("você é menor de idade");
 }
