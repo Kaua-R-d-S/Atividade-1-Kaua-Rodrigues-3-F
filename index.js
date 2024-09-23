@@ -59,8 +59,21 @@ var idadeComprador = entrada("Qual sua idade?");
 if(idadeComprador >=18) {
   console.log("Ola senhor(a) " + nomeComprador);
   console.log("comprador maior de idade");
-  console.log("destinos disponíveis: " + listaDeDestinos);
 }else {
 console.log("Não é possivel vender passagem para menores de idade");
 console.log("você é menor de idade");
+  
+}
+
+var contador = 1;
+while (contador <= 9 ){
+  console.log(listaDeDestinos[contador]); 
+  contador++;
+}
+  var destino = entrada("Digite o número que corresponde ao destino selecionado (0-8)");
+  console.log(`destino selecionado foi: ${listaDeDestinos[destino]}`);
+} else {
+  console.log("Olá senhor(a) " + nomeComprador);
+  console.log("Não foi possível consluir a compra");
+  console.log("Você é menor de idade");
 }
