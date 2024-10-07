@@ -28,6 +28,11 @@ const cidade = "São José dos Pinhais";
 console.log(cidade);
 
 //agencia de viagens paris,monte everest,gran canion,polo norte,Santorini, Grécia,Na península de Yucatan, no México, Japão,New york
+console.log(" ")
+console.log("------------------------------");
+console.log("------agencia de viagens------");
+console.log("------------------------------");
+console.log(" ");
 const listaDeDestinos = new Array(
   " Paris",
   " Monte Everest",
@@ -53,17 +58,25 @@ console.log(listaDeDestinos);
 listaDeDestinos.push("Londrina");
 console.log(listaDeDestinos);
 
+const loginCerto = "kaua"
+const senhacerto = "123"
+
+var login = entrada("qual é seu login? ");
+var senha = entrada("Digite é sua senha? ");
+
+while(login != loginCerto || senha != senhacerto ){
+  console.log("login ou senha incorretos");
+  login = entrada("qual é seu login? ");
+  senha = entrada("Digite é sua senha? ");  
+}
+
 var nomeComprador = entrada("Digite seu nome: ");
 var idadeComprador = entrada("Qual sua idade?");
 
 if(idadeComprador >=18) {
   console.log("Ola senhor(a) " + nomeComprador);
   console.log("comprador maior de idade");
-}else {
-console.log("Não é possivel vender passagem para menores de idade");
-console.log("você é menor de idade");
-  
-}
+
 
 var contador = 1;
 while (contador <= 9 ){
@@ -74,6 +87,6 @@ while (contador <= 9 ){
   console.log(`destino selecionado foi: ${listaDeDestinos[destino]}`);
 } else {
   console.log("Olá senhor(a) " + nomeComprador);
-  console.log("Não foi possível consluir a compra");
+  console.log("Não foi possível concluir a compra");
   console.log("Você é menor de idade");
 }
